@@ -1,0 +1,74 @@
+.customSvg {
+    display: block;
+    position: absolute;
+}
+
+.line0 {
+  stroke: #000000;
+  stroke-width: 4;
+  fill: none;
+}
+
+.line1 {
+  stroke: #cbd5e0;
+  stroke-width: 4;
+  fill: none;
+  stroke-dasharray: 360;
+  animation: dash2 1.5s linear infinite;
+}
+
+@keyframes dash2 {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: -60;
+  }
+}
+
+.line2 {
+  stroke: #000000;
+  stroke-width: 4;
+  fill: none;
+  stroke-dasharray: 360;
+  animation: dash 1.5s linear infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.circle {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 4;
+}
+
+.dasharray {
+  fill: none;
+  stroke: red;
+  stroke-width: 4;
+  stroke-dasharray: 10;
+}
+
+.offset {
+  fill: none;
+  stroke: red;
+  stroke-width: 4;
+  stroke-dasharray: 10;
+  animation: sampleDash 5s linear infinite
+}
+
+@keyframes sampleDash {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 100;
+  }
+}

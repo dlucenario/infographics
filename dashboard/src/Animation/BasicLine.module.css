@@ -1,0 +1,60 @@
+.path {
+  stroke: #000000;
+  stroke-width: 4;
+  fill: none;
+}
+
+.trail {
+  stroke: blue;
+  stroke-width: 4;
+  fill: none;
+  stroke-dasharray: 360;
+  animation: dash 1.5s linear infinite;
+}
+
+@keyframes dash {
+    from {
+      stroke-dashoffset: 360;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+.projectile {
+  stroke: red;
+  stroke-width: 4;
+  fill: none;
+  stroke-dasharray: 360;
+  animation: dash2 1.5s linear infinite;
+}
+
+@keyframes dash2 {
+    from {
+      stroke-dashoffset: 300;
+    }
+    to {
+      stroke-dashoffset: -60;
+    }
+  }
+
+.circle {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 4;
+}
+
+.dasharray {
+  fill: none;
+  stroke: red;
+  stroke-width: 4;
+  stroke-dasharray: 10;
+}
+
+.offset {
+  fill: none;
+  stroke: red;
+  stroke-width: 4;
+  stroke-dasharray: 10;
+  animation: sampleDash 5s linear infinite
+}

@@ -1,0 +1,9 @@
+.sidebarOpen {
+    width: 225px;
+    transition: width 1s;
+}
+
+.sidebarClose {
+    width: 75px;
+    transition: width 1s;
+}

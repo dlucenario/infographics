@@ -1,0 +1,16 @@
+.buttonGroup {
+    top: 0px;
+    right: 0px;
+    transition: right 0.5s, opacity 0.5s;
+    transition-timing-function: cubic-bezier(0.25, 0, 0, 1);
+    opacity: 0;
+}
+
+.myCard {
+
+}
+
+.myCard:hover .buttonGroup{
+    right: -50px;
+    opacity: 1;
+}

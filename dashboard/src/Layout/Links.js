@@ -38,9 +38,22 @@ export default function Links(props) {
                     </NavLink>
                 </li>
                 <li>
-                    <LinkButton icon = {basicIcon}>
+                    <LinkButton 
+                        action = {props.basicDrawer === true ? props.closeBasicDrawer : props.openBasicDrawer} 
+                        icon = {basicIcon}>
                         basic
                     </LinkButton>
+
+                    <NavLink to="/basic/group">
+                        <div className = {clsx({
+                            'h-0 overflow-hidden': !props.basicDrawer,
+                            'h-auto': props.basicDrawer
+                        })}>
+                            <div className = 'flex justify-end w-full pr-4 py-2 hover:bg-gray-300 text-sm'>
+                                Group : Tailwind
+                            </div>
+                        </div>
+                    </NavLink>
                 </li>
                 <li>
                     <LinkButton icon = {chartIcon}>

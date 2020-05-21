@@ -6,7 +6,7 @@ import menuIcon from '../assets/icons/menu.svg';
 
 export default function Sidebar(props) {
     return(
-        <div className = 'h-screen border-solid border-2 border-gray-300'>
+        <div className = 'h-screen border-solid border-2 border-gray-300 bg-gray-100'>
             <div className = 'p-3 flex items-center'>
                 <IconButton 
                     action = { props.drawerState === true ? props.closeDrawer : props.openDrawer }>
@@ -20,9 +20,14 @@ export default function Sidebar(props) {
                 infoDrawer = {props.infoDrawer}
                 openInfoDrawer = {props.openInfoDrawer}
                 closeInfoDrawer = {props.closeInfoDrawer}
+
                 animationDrawer = {props.animationDrawer}
                 openAnimationDrawer = {props.openAnimationDrawer}
                 closeAnimationDrawer = {props.closeAnimationDrawer}
+
+                basicDrawer = {props.basicDrawer}
+                openBasicDrawer = {props.openBasicDrawer}
+                closeBasicDrawer = {props.closeBasicDrawer}
             ></Links>
         </div>
     )
